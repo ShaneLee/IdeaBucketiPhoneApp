@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bFo-gf-d5p">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Form Examples-->
+        <scene sceneID="WU0-PS-rMG">
+            <objects>
+                <viewController id="9yx-Pw-yt4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZ1-WE-IYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-XV-bZB">
+                                <rect key="frame" x="16" y="317.5" width="343" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-zm-6EA">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Simple Form"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="taC-gb-dMc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FV2-tl-JjZ" firstAttribute="trailing" secondItem="1ke-XV-bZB" secondAttribute="trailing" constant="16" id="0Ut-sl-UeB"/>
+                            <constraint firstItem="1ke-XV-bZB" firstAttribute="leading" secondItem="FV2-tl-JjZ" secondAttribute="leading" constant="16" id="aIt-ob-alH"/>
+                            <constraint firstItem="1ke-XV-bZB" firstAttribute="centerY" secondItem="kZ1-WE-IYz" secondAttribute="centerY" id="wAK-gk-9GM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FV2-tl-JjZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Form Examples" id="RUJ-pq-o53">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="MYs-ID-0XZ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJl-Ic-eVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="27.436281859070466"/>
+        </scene>
+        <!--Idea Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IdeaFormController" customModule="IdeaBucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-ru-lRP" userLabel="Form">
+                                <rect key="frame" x="16" y="178" width="343" height="311"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="221" translatesAutoresizingMaskIntoConstraints="NO" id="ZaY-3x-0gH" userLabel="Form Fields">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="311"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Idea" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-n6-uSA" customClass="TextField" customModule="IdeaBucket" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="py4-if-SHO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="idea"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Category" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zl2-Md-Pea" customClass="TextField" customModule="IdeaBucket" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="266" width="343" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="category"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zl2-Md-Pea" firstAttribute="height" secondItem="qTn-n6-uSA" secondAttribute="height" id="gFr-kY-jhi"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT4-0t-8xQ">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FWN-dC-Gzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Kp-Qz-Osk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hT4-0t-8xQ" secondAttribute="trailing" constant="16" id="0yH-W7-M7u"/>
+                            <constraint firstItem="nQG-ru-lRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MGB-yI-rxm"/>
+                            <constraint firstItem="hT4-0t-8xQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MMh-FI-Yaf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nQG-ru-lRP" secondAttribute="trailing" constant="16" id="VUX-iO-XzQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hT4-0t-8xQ" secondAttribute="bottom" constant="20" id="hdR-GM-OFT"/>
+                            <constraint firstItem="nQG-ru-lRP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uGI-q9-xVM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="form" destination="LOq-DV-Kog" id="AW3-2P-hdv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="LOq-DV-Kog" customClass="Form" customModule="IdeaBucket" customModuleProvider="target">
+                    <connections>
+                        <outletCollection property="controls" destination="qTn-n6-uSA" collectionClass="NSMutableArray" id="Zoc-sU-8fT"/>
+                        <outletCollection property="controls" destination="Zl2-Md-Pea" collectionClass="NSMutableArray" id="8mz-cP-dM3"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lwR-K4-h5b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bFo-gf-d5p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GIp-he-geG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9yx-Pw-yt4" kind="relationship" relationship="rootViewController" id="7Os-TB-Uop"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snP-Zy-HOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-991.20000000000005" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
