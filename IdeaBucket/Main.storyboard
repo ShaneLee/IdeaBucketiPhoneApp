@@ -37,7 +37,7 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <state key="normal" title="Table View"/>
                                         <connections>
-                                            <segue destination="Z24-g2-n0d" kind="show" id="Aan-nM-AjY"/>
+                                            <segue destination="Z24-g2-n0d" kind="show" id="ffe-Tg-GGC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,19 +136,19 @@
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Idea Table View Controller-->
         <scene sceneID="Xyz-R8-nZr">
             <objects>
-                <tableViewController id="Z24-g2-n0d" sceneMemberID="viewController">
+                <tableViewController id="Z24-g2-n0d" customClass="IdeaTableViewController" customModule="IdeaBucket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aPR-kW-Ypn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IdeaTableViewCell" rowHeight="90" id="cKl-8s-unK" customClass="IdeaTableViewCell" customModule="IdeaBucket" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IdeaTableViewCell" rowHeight="90" id="cKl-8s-unK" customClass="IdeaTableViewCell" customModule="IdeaBucket">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cKl-8s-unK" id="Iek-1Q-izM" customClass="UITableViewCell">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cKl-8s-unK" id="Iek-1Q-izM" customClass="IdeaTableViewCell" customModule="IdeaBucket" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -156,7 +156,7 @@
                                             <rect key="frame" x="266" y="69" width="93" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name=".SFUI-RegularItalic" family=".AppleSystemUIFont" pointSize="15"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vi-Uz-W2f">
@@ -170,14 +170,10 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoryLabel" destination="ffn-xF-deA" id="4Lt-qo-Sf1"/>
-                                    <outlet property="ideaLabel" destination="2Vi-Uz-W2f" id="LKk-hj-NMg"/>
+                                    <outlet property="ideaLabel" destination="2Vi-Uz-W2f" id="v8b-dA-WNK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Z24-g2-n0d" id="dhq-j4-oys"/>
-                            <outlet property="delegate" destination="Z24-g2-n0d" id="44X-l5-vsG"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Fxm-2g-P1G"/>
                 </tableViewController>

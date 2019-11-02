@@ -19,6 +19,7 @@
 		3498169E235CBA30002CC298 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498169D235CBA30002CC298 /* FormViewController.swift */; };
 		349816A0235CBBDA002CC298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3498169F235CBBDA002CC298 /* Main.storyboard */; };
 		349816A2235CBC23002CC298 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349816A1235CBC23002CC298 /* TextField.swift */; };
+		34A55865236DB75600E5091D /* IdeaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A55863236DB74A00E5091D /* IdeaTableViewController.swift */; };
 		34CB3517236D6AD9000FDD12 /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB3516236D6AD9000FDD12 /* IdeaTableViewCell.swift */; };
 		34E4B6E723649AAA00C74091 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4B6E623649AAA00C74091 /* RequestController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		3498169D235CBA30002CC298 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		3498169F235CBBDA002CC298 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		349816A1235CBC23002CC298 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		34A55863236DB74A00E5091D /* IdeaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewController.swift; sourceTree = "<group>"; };
 		34CB3516236D6AD9000FDD12 /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
 		34E4B6E623649AAA00C74091 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 		3498169C235CBA0B002CC298 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34A55863236DB74A00E5091D /* IdeaTableViewController.swift */,
 				3498169D235CBA30002CC298 /* FormViewController.swift */,
 			);
 			path = "View Controllers";
@@ -333,6 +336,7 @@
 				34E4B6E723649AAA00C74091 /* RequestController.swift in Sources */,
 				34CB3517236D6AD9000FDD12 /* IdeaTableViewCell.swift in Sources */,
 				349816A2235CBC23002CC298 /* TextField.swift in Sources */,
+				34A55865236DB75600E5091D /* IdeaTableViewController.swift in Sources */,
 				34981699235CB584002CC298 /* Form.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

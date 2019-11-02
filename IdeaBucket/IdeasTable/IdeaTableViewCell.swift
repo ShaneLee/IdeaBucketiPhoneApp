@@ -10,8 +10,6 @@ import UIKit
 
 class IdeaTableViewCell: UITableViewCell {
     
-    //MARK: Properties
-
     @IBOutlet weak var ideaLabel: UILabel!
     
     @IBOutlet weak var categoryLabel: UILabel!
