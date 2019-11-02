@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-XV-bZB">
-                                <rect key="frame" x="16" y="317.5" width="343" height="32"/>
+                                <rect key="frame" x="16" y="301.5" width="343" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-zm-6EA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
@@ -25,6 +25,14 @@
                                         <state key="normal" title="Simple Form"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="taC-gb-dMc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hF-Kg-sA5">
+                                        <rect key="frame" x="0.0" y="32" width="343" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Table View"/>
+                                        <connections>
+                                            <segue destination="Z24-g2-n0d" kind="show" id="Aan-nM-AjY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -122,6 +130,35 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Xyz-R8-nZr">
+            <objects>
+                <tableViewController id="Z24-g2-n0d" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aPR-kW-Ypn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cKl-8s-unK">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cKl-8s-unK" id="Iek-1Q-izM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z24-g2-n0d" id="dhq-j4-oys"/>
+                            <outlet property="delegate" destination="Z24-g2-n0d" id="44X-l5-vsG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Fxm-2g-P1G"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6x9-6C-Rmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lwR-K4-h5b">
