@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340E48B2236DA637001C830D /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E48B1236DA637001C830D /* Idea.swift */; };
 		34434670235B5824008B28D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443466F235B5824008B28D8 /* AppDelegate.swift */; };
 		34434676235B5827008B28D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34434675235B5827008B28D8 /* Assets.xcassets */; };
 		34434679235B5827008B28D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34434678235B5827008B28D8 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		3498169E235CBA30002CC298 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498169D235CBA30002CC298 /* FormViewController.swift */; };
 		349816A0235CBBDA002CC298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3498169F235CBBDA002CC298 /* Main.storyboard */; };
 		349816A2235CBC23002CC298 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349816A1235CBC23002CC298 /* TextField.swift */; };
+		34CB3517236D6AD9000FDD12 /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB3516236D6AD9000FDD12 /* IdeaTableViewCell.swift */; };
 		34E4B6E723649AAA00C74091 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4B6E623649AAA00C74091 /* RequestController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340E48B1236DA637001C830D /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 		3443466C235B5824008B28D8 /* IdeaBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3443466F235B5824008B28D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34434675235B5827008B28D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		3498169D235CBA30002CC298 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		3498169F235CBBDA002CC298 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		349816A1235CBC23002CC298 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		34CB3516236D6AD9000FDD12 /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
 		34E4B6E623649AAA00C74091 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340E48B0236DA612001C830D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				340E48B1236DA637001C830D /* Idea.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		34434663235B5824008B28D8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,8 @@
 		3443466E235B5824008B28D8 /* IdeaBucket */ = {
 			isa = PBXGroup;
 			children = (
+				340E48B0236DA612001C830D /* Model */,
+				34CB3519236D6B0B000FDD12 /* IdeasTable */,
 				34E4B6E523649A8F00C74091 /* RequestControllers */,
 				3498169C235CBA0B002CC298 /* View Controllers */,
 				34981695235CB563002CC298 /* Forms */,
@@ -162,6 +176,14 @@
 				3498169D235CBA30002CC298 /* FormViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		34CB3519236D6B0B000FDD12 /* IdeasTable */ = {
+			isa = PBXGroup;
+			children = (
+				34CB3516236D6AD9000FDD12 /* IdeaTableViewCell.swift */,
+			);
+			path = IdeasTable;
 			sourceTree = "<group>";
 		};
 		34E4B6E523649A8F00C74091 /* RequestControllers */ = {
@@ -304,10 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340E48B2236DA637001C830D /* Idea.swift in Sources */,
 				34434670235B5824008B28D8 /* AppDelegate.swift in Sources */,
 				34981697235CB57B002CC298 /* FormControl.swift in Sources */,
 				3498169E235CBA30002CC298 /* FormViewController.swift in Sources */,
 				34E4B6E723649AAA00C74091 /* RequestController.swift in Sources */,
+				34CB3517236D6AD9000FDD12 /* IdeaTableViewCell.swift in Sources */,
 				349816A2235CBC23002CC298 /* TextField.swift in Sources */,
 				34981699235CB584002CC298 /* Form.swift in Sources */,
 			);
