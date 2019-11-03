@@ -28,8 +28,6 @@ func parseJSON(data: Data) -> [Idea] {
                         if (ideaObj["category"] == nil) {
                             category = ""
                         }
-                        print(idea)
-                        print(category!)
                         
                         guard let completeIdea = Idea(idea: idea, category: category!) else {
                             continue

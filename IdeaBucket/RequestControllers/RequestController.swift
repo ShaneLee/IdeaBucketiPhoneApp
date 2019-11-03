@@ -47,27 +47,27 @@ func getIdeas() -> [Idea] {
     var request = URLRequest(url: url)
     request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
     request.httpMethod = "GET"
-    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+    let task = URLSession.shared.dataTask(with: url) { data, response, error in
         guard let data = data,
-            let response = response as? HTTPURLResponse,
-            error == nil else {
-            print("error", error ?? "Unknown error")
-            return
-        }
+                let response = response as? HTTPURLResponse,
+                error == nil else {
+                print("error", error ?? "Unknown error")
+                return
+            }
 
-        guard (200 ... 299) ~= response.statusCode else {
-            print("statusCode should be 2xx, but is \(response.statusCode)")
-            print("response = \(response)")
-            return
-        }
-        ideas = parseJSON(data: data)
+            guard (200 ... 299) ~= response.statusCode else {
+        
+                print("statusCode should be 2xx, but is \(response.statusCode)")
+                print("response = \(response)")
+                return
+            }
+             ideas = parseJSON(data: data)
     }
     task.resume()
-    sleep(2)
-    print("hi")
-    print(ideas)
+    sleep(1) // TODO make this async properly 
     return ideas
 }
+
 
 extension Dictionary {
     func percentEscaped() -> String {

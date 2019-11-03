@@ -14,8 +14,6 @@ class IdeaTableViewController: UITableViewController {
     
     private func loadIdeas() {
         ideas = getIdeas()
-        print(ideas)
-//        print(ideas[0].idea)
     }
     
     override func viewDidLoad() {
