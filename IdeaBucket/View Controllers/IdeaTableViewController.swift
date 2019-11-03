@@ -13,15 +13,9 @@ class IdeaTableViewController: UITableViewController {
     var ideas = [Idea]()
     
     private func loadIdeas() {
-        guard let idea1 = Idea(idea: "This is a test", category: "Test") else {
-            fatalError("Unable to instantiate idea")
-        }
-        guard let idea2 = Idea(idea: "This is a second test", category: "Test") else {
-            fatalError("Unable to instantiate idea")
-        }
-        
-        ideas += [idea1, idea2]
-        
+        ideas = getIdeas()
+        print(ideas)
+//        print(ideas[0].idea)
     }
     
     override func viewDidLoad() {

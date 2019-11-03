@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340E48B2236DA637001C830D /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E48B1236DA637001C830D /* Idea.swift */; };
+		340E7440236DFA2C006CA90E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E743F236DFA2C006CA90E /* Parser.swift */; };
 		34434670235B5824008B28D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443466F235B5824008B28D8 /* AppDelegate.swift */; };
 		34434676235B5827008B28D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34434675235B5827008B28D8 /* Assets.xcassets */; };
 		34434679235B5827008B28D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34434678235B5827008B28D8 /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		340E48B1236DA637001C830D /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		340E743F236DFA2C006CA90E /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		3443466C235B5824008B28D8 /* IdeaBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3443466F235B5824008B28D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34434675235B5827008B28D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		340E743E236DFA19006CA90E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				340E743F236DFA2C006CA90E /* Parser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		34434663235B5824008B28D8 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		3443466E235B5824008B28D8 /* IdeaBucket */ = {
 			isa = PBXGroup;
 			children = (
+				340E743E236DFA19006CA90E /* Services */,
 				340E48B0236DA612001C830D /* Model */,
 				34CB3519236D6B0B000FDD12 /* IdeasTable */,
 				34E4B6E523649A8F00C74091 /* RequestControllers */,
@@ -331,6 +342,7 @@
 			files = (
 				340E48B2236DA637001C830D /* Idea.swift in Sources */,
 				34434670235B5824008B28D8 /* AppDelegate.swift in Sources */,
+				340E7440236DFA2C006CA90E /* Parser.swift in Sources */,
 				34981697235CB57B002CC298 /* FormControl.swift in Sources */,
 				3498169E235CBA30002CC298 /* FormViewController.swift in Sources */,
 				34E4B6E723649AAA00C74091 /* RequestController.swift in Sources */,

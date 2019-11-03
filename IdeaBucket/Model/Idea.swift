@@ -16,7 +16,6 @@ class Idea {
         if idea.isEmpty || category.isEmpty {
             return nil
         }
-        
         self.idea = idea
         self.category = category
     }
